@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esencia Vital | Heidy Pérez - Herbalife</title>
+    <link rel="icon" type="image/png" href="https://i.ibb.co/35TxhGsh/IMG-20260418-155109.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --bg-dark: #0a0a0a;
+            --card-bg: #1a1a1a;
+            --neon-green: #39ff14;
+            --neon-pink: #ff00ff;
+            --neon-blue: #00d2ff;
+            --text-white: #ffffff;
+            --text-gray: #b0b0b0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            color: var(--text-white);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* --- Header & Logo --- */
+        header {
+            padding: 20px;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.8);
+            border-bottom: 2px solid var(--neon-green);
+            box-shadow: 0 0 15px var(--neon-green);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo-container img {
+            height: 80px;
+            filter: drop-shadow(0 0 5px var(--neon-green));
+        }
+
+        h1 {
+            font-size: 2rem;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: var(--neon-green);
+            margin-top: 10px;
+        }
+
+        /* --- Hero Section --- */
+        .hero {
+            padding: 60px 20px;
+            text-align: center;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://i.ibb.co/C3JvffSM/IMG-20260418-WA0010.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .hero h2 {
+            font-size: 2.5rem;
+            color: var(--text-white);
+            text-shadow: 0 0 10px var(--neon-blue);
+        }
+
+        /* --- Gallery Grid --- */
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .product-card {
+            background: var(--card-bg);
+            border-radius: 15px;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid #333;
+            position: relative;
+        }
+
+        .product-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 0 20px var(--neon-pink);
+            border-color: var(--neon-pink);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+        }
+
+        .product-info {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .product-info h3 {
+            margin-bottom: 10px;
+            color: var(--neon-blue);
+        }
+
+        /* --- Floating CTA WhatsApp --- */
+        .cta-container {
+            background: #111;
+            padding: 40px 20px;
+            text-align: center;
+            border-top: 1px solid var(--neon-blue);
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 15px 30px;
+            margin: 10px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+
+        .btn-ws {
+            background: #25d366;
+            color: white;
+            box-shadow: 0 0 15px #25d366;
+        }
+
+        .btn-tech {
+            background: transparent;
+            color: var(--neon-blue);
+            border: 2px solid var(--neon-blue);
+            box-shadow: 0 0 10px var(--neon-blue);
+        }
+
+        .btn:hover {
+            transform: scale(1.05);
+            filter: brightness(1.2);
+        }
+
+        /* --- Footer --- */
+        footer {
+            padding: 30px;
+            text-align: center;
+            font-size: 0.9rem;
+            color: var(--text-gray);
+            border-top: 1px solid #222;
+        }
+
+        footer a {
+            color: var(--neon-green);
+            text-decoration: none;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            h1 { font-size: 1.5rem; }
+            .hero h2 { font-size: 1.8rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo-container">
+            <img src="https://i.ibb.co/35TxhGsh/IMG-20260418-155109.png" alt="Esencia Vital Logo">
+        </div>
+        <h1>Esencia Vital</h1>
+    </header>
+
+    <section class="hero">
+        <h2>Bienestar y Nutrición con Heidy Pérez</h2>
+        <p>Transforma tu estilo de vida con productos de alta calidad.</p>
+    </section>
+
+    <div class="container">
+        <div class="grid">
+            <div class="product-card">
+                <img src="https://i.ibb.co/N0n1qyv/IMG-20260418-160317.jpg" alt="Waffles Saludables">
+                <div class="product-info">
+                    <h3>Waffles Proteicos</h3>
+                    <p>Deliciosos y nutritivos para empezar el día con energía.</p>
+                </div>
+            </div>
+
+            <div class="product-card" style="border-color: var(--neon-green);">
+                <img src="https://i.ibb.co/Nd23Ntrg/IMG-20260418-WA0005.jpg" alt="Detox Herbalife">
+                <div class="product-info">
+                    <h3>Plan Detox</h3>
+                    <p>Limpia tu organismo de forma natural y efectiva.</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://i.ibb.co/HLpCF5Wh/IMG-20260418-WA0004.jpg" alt="Desayunos Sorpresa">
+                <div class="product-info">
+                    <h3>Desayunos Sorpresa</h3>
+                    <p>El regalo perfecto: saludable, rico y lleno de vida.</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://i.ibb.co/HT8BhN5S/IMG-20260418-WA0007.jpg" alt="Batidos de Proteína">
+                <div class="product-info">
+                    <h3>Batidos de Proteína</h3>
+                    <p>Máxima nutrición con el mejor sabor de Herbalife.</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://i.ibb.co/gYdRJJv/IMG-20260418-WA0012.jpg" alt="Botella Detox">
+                <div class="product-info">
+                    <h3>Bebidas Refrescantes</h3>
+                    <p>Hidratación con propósito en cualquier lugar.</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://i.ibb.co/C3JvffSM/IMG-20260418-WA0010.jpg" alt="Menú Esencia Vital">
+                <div class="product-info">
+                    <h3>Nuestro Menú</h3>
+                    <p>Variedad de opciones para cada meta física.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="cta-container">
+        <h3>¿Deseas una página como esta?</h3>
+        <p>Impulsa tu negocio hoy mismo.</p>
+        <a href="https://wa.me/573222117202?text=Vengo%20de%20la%20página%20de%20Herbalife%20y%20deseo%20una%20página%20como%20esta" class="btn btn-ws">Escríbenos al WhatsApp</a>
+        <br>
+        <a href="https://lnk.bio/TecnologySmith" class="btn btn-tech">Conoce más servicios aquí</a>
+    </section>
+
+    <footer>
+        <p>© 2026 Esencia Vital - Heidy Pérez. Todos los derechos reservados.</p>
+        <p>Creada por <a href="https://tecnologysmith.godaddysites.com/" target="_blank">TecnologySmith</a></p>
+    </footer>
+
+</body>
+                  </html>
+                  
